@@ -4,7 +4,7 @@
 
 All this talk about a "stimulus check" gave me an idea: Create a checkmark that "stimulates" your senses.
 
-FIXME: single-image preview
+![A visually-loud image displaying prominently a checkmark, along with the text "stimulus check". The colors, sizes, positions, fonts, and everything change back and forth.](example.gif)
 
 Epilepsy warning! This program intentionally produces harsh videos that are difficult to look at.
 
@@ -36,11 +36,11 @@ if you really want a particular TTF but don't have it.
 ## Usage
 
 ```console
-$ emit.py
-Writing 1200 images ... done.
-Concatenating into mkv ... done.
-Cleaning up ... done.
-Output is at stimulating_1616072748.mkv
+$ EMIT_MUSIC_FILE='/path/to/for/example/Hybrid - Choke-gkexA9cYAds.m4a' ./emit.py
+Writing 1140 images ........................................................... done.
+Concatenating into stimulating_1616090488.mp4 ... done.
+Cleaning up ........................................................... done.
+Output is at stimulating_1616090488.mp4
 ```
 
 ## How it works
