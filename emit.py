@@ -46,7 +46,6 @@ USABLE_FONTS = [
     # - Some are cut off by their bounding box (?!)
     # - The vast majority doesn't support the '✓' glyph
     '/usr/share/fonts/opentype/ipafont-gothic/ipagp.ttf',
-    '/usr/share/fonts/truetype/fonts-japanese-mincho.ttf',
     '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
     '/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf',
     '/usr/share/fonts/truetype/freefont/FreeSerif.ttf',
@@ -54,7 +53,6 @@ USABLE_FONTS = [
     '/usr/share/fonts/truetype/vlgothic/VL-PGothic-Regular.ttf',
     # Lessen the probability of "unifont" by duplicating all other fonts:
     '/usr/share/fonts/opentype/ipafont-gothic/ipagp.ttf',
-    '/usr/share/fonts/truetype/fonts-japanese-mincho.ttf',
     '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
     '/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf',
     '/usr/share/fonts/truetype/freefont/FreeSerif.ttf',
@@ -74,7 +72,7 @@ def check_fonts():
         else:
             actually_usable_fonts.append(font)
     if len(actually_usable_fonts) != len(USABLE_FONTS):
-        print('WARNING: Could find only {} out of {} known fonts!'.format(len(actually_usable_fonts), len(USABLE_FONTS)), file=stderr)
+        print('WARNING: Could find only {} out of {} known fonts!'.format(len(actually_usable_fonts), len(USABLE_FONTS)), file=sys.stderr)
     USABLE_FONTS = actually_usable_fonts
 
 
